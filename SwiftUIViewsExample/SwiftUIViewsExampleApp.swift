@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIViewsExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewTypes: ViewType.allCases)
         }
     }
 }

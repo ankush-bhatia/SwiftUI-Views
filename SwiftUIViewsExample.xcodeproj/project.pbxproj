@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965942A72507EBA5006EB9FB /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965942A62507EBA5006EB9FB /* ViewType.swift */; };
 		9687BE3724E1E0A0008401BD /* SwiftUIViewsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687BE3624E1E0A0008401BD /* SwiftUIViewsExampleApp.swift */; };
 		9687BE3924E1E0A0008401BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687BE3824E1E0A0008401BD /* ContentView.swift */; };
 		9687BE3B24E1E0A1008401BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9687BE3A24E1E0A1008401BD /* Assets.xcassets */; };
 		9687BE3E24E1E0A1008401BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9687BE3D24E1E0A1008401BD /* Preview Assets.xcassets */; };
 		9687BE4924E1E0A1008401BD /* SwiftUIViewsExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687BE4824E1E0A1008401BD /* SwiftUIViewsExampleTests.swift */; };
 		9687BE5424E1E0A1008401BD /* SwiftUIViewsExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687BE5324E1E0A1008401BD /* SwiftUIViewsExampleUITests.swift */; };
+		96A902552508DF4D0048DAE6 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A902542508DF4D0048DAE6 /* TitleButton.swift */; };
+		96A902572508E4760048DAE6 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A902562508E4760048DAE6 /* ButtonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		965942A62507EBA5006EB9FB /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		9687BE3324E1E0A0008401BD /* SwiftUIViewsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIViewsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9687BE3624E1E0A0008401BD /* SwiftUIViewsExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewsExampleApp.swift; sourceTree = "<group>"; };
 		9687BE3824E1E0A0008401BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		9687BE4F24E1E0A1008401BD /* SwiftUIViewsExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIViewsExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9687BE5324E1E0A1008401BD /* SwiftUIViewsExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewsExampleUITests.swift; sourceTree = "<group>"; };
 		9687BE5524E1E0A1008401BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A902542508DF4D0048DAE6 /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		96A902562508E4760048DAE6 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		962381E024E1E2F6003578A9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				96A902542508DF4D0048DAE6 /* TitleButton.swift */,
+				96A902562508E4760048DAE6 /* ButtonsView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		9687BE2A24E1E0A0008401BD = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +110,13 @@
 		9687BE3524E1E0A0008401BD /* SwiftUIViewsExample */ = {
 			isa = PBXGroup;
 			children = (
+				962381E024E1E2F6003578A9 /* Buttons */,
 				9687BE3624E1E0A0008401BD /* SwiftUIViewsExampleApp.swift */,
 				9687BE3824E1E0A0008401BD /* ContentView.swift */,
 				9687BE3A24E1E0A1008401BD /* Assets.xcassets */,
 				9687BE3F24E1E0A1008401BD /* Info.plist */,
 				9687BE3C24E1E0A1008401BD /* Preview Content */,
+				965942A62507EBA5006EB9FB /* ViewType.swift */,
 			);
 			path = SwiftUIViewsExample;
 			sourceTree = "<group>";
@@ -260,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9687BE3924E1E0A0008401BD /* ContentView.swift in Sources */,
+				96A902572508E4760048DAE6 /* ButtonsView.swift in Sources */,
 				9687BE3724E1E0A0008401BD /* SwiftUIViewsExampleApp.swift in Sources */,
+				965942A72507EBA5006EB9FB /* ViewType.swift in Sources */,
+				96A902552508DF4D0048DAE6 /* TitleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
