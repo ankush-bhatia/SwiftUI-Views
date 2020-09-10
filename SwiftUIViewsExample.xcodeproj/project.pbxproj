@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96019DA9250942D50008EBD5 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96019DA8250942D50008EBD5 /* ImageButton.swift */; };
+		96019DAB250947CD0008EBD5 /* ImageTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96019DAA250947CD0008EBD5 /* ImageTitleButton.swift */; };
 		965942A72507EBA5006EB9FB /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965942A62507EBA5006EB9FB /* ViewType.swift */; };
 		9687BE3724E1E0A0008401BD /* SwiftUIViewsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687BE3624E1E0A0008401BD /* SwiftUIViewsExampleApp.swift */; };
 		9687BE3924E1E0A0008401BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687BE3824E1E0A0008401BD /* ContentView.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96019DA8250942D50008EBD5 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		96019DAA250947CD0008EBD5 /* ImageTitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleButton.swift; sourceTree = "<group>"; };
 		965942A62507EBA5006EB9FB /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		9687BE3324E1E0A0008401BD /* SwiftUIViewsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIViewsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9687BE3624E1E0A0008401BD /* SwiftUIViewsExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewsExampleApp.swift; sourceTree = "<group>"; };
@@ -81,8 +85,10 @@
 		962381E024E1E2F6003578A9 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				96A902542508DF4D0048DAE6 /* TitleButton.swift */,
 				96A902562508E4760048DAE6 /* ButtonsView.swift */,
+				96A902542508DF4D0048DAE6 /* TitleButton.swift */,
+				96019DA8250942D50008EBD5 /* ImageButton.swift */,
+				96019DAA250947CD0008EBD5 /* ImageTitleButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -277,9 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9687BE3924E1E0A0008401BD /* ContentView.swift in Sources */,
+				96019DA9250942D50008EBD5 /* ImageButton.swift in Sources */,
 				96A902572508E4760048DAE6 /* ButtonsView.swift in Sources */,
 				9687BE3724E1E0A0008401BD /* SwiftUIViewsExampleApp.swift in Sources */,
 				965942A72507EBA5006EB9FB /* ViewType.swift in Sources */,
+				96019DAB250947CD0008EBD5 /* ImageTitleButton.swift in Sources */,
 				96A902552508DF4D0048DAE6 /* TitleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

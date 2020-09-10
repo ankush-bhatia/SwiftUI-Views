@@ -23,9 +23,9 @@ struct ButtonsView: View {
     private var buttonsPicker: some View {
         Picker("Select Button Type",
                selection: $selectedIndex) {
-            Text("Title Button")
-            Text("Image Button")
-            Text("ImageTitle Button")
+            Text("Title Button").tag(0)
+            Text("Image Button").tag(1)
+            Text("ImageTitle Button").tag(2)
         }
         .pickerStyle(SegmentedPickerStyle())
         .padding(.horizontal)
@@ -39,11 +39,28 @@ struct ButtonsView: View {
                         disabledBackgroundColor: .gray,
                         isEnabled: .constant(true),
                         buttonAction: {
-                            // Button Action received here
+                            // Button Action
                         })
                 .padding(.horizontal)
+        } else if selectedIndex == 1 {
+            ImageButton(systemImage: "bell.fill",
+                        customImage: nil,
+                        enabledTintColor: .blue,
+                        disabledTintColor: .gray,
+                        isEnabled: .constant(true)) {
+                // Button Action
+            }
         } else {
-            EmptyView()
+            ImageTitleButton(width: 200,
+                             systemImage: "bell.fill",
+                             customImage: nil,
+                             title: "Subscribe",
+                             enabledTintColor: .green,
+                             disabledTintColor: .gray,
+                             isEnabled: .constant(true)) {
+                // Button Action
+            }
+            .padding(.horizontal)
         }
     }
 }

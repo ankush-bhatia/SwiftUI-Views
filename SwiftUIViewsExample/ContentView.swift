@@ -22,6 +22,7 @@ struct ContentView: View {
                 pickerView
                 Spacer()
                 submitButton
+                    .padding(.horizontal)
                 Spacer()
             }
             .navigationBarTitle("View Examples",
@@ -39,9 +40,12 @@ struct ContentView: View {
             isActive: $isDestinationActive,
             label: {
                 Text("Submit")
-                    .foregroundColor(.green)
-                    .background(Color.white)
             })
+            .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+            .padding(.all, 12.0)
+            .foregroundColor(.white)
+            .background(Color.green)
+            .cornerRadius(4.0)
     }
     
     private var pickerView: some View {
